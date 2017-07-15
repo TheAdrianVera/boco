@@ -1,0 +1,15 @@
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+#placeName {
+  padding-top: 20px;
+  font-size: 30px;
+
+}
+#placeInfo {
+  text-align: left;
+  padding-left: 50px;
+  padding-top: 30px;
+  font-size: 20px;
+}
