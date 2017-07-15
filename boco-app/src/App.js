@@ -10,13 +10,20 @@ import RaisedButton from 'material-ui/RaisedButton';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'; 
 
 import Topics from './components/Topics';
+import Business from './components/Business'
+import SearchPage from './components/SearchPage'
 
 const Home = ({history}) => (
   <div>
     <h2>Home</h2>
     <RaisedButton
       label="Hello, World"
-      onClick={() => (history.push("/topics/rendering"))}/>
+      onClick={() => {
+        fetch("http://localhost:5000/food/san francisco")
+        .then((response) => response.json())
+        .then((results_list) => console.log(results_list))
+      }}/>
+      <SearchPage />
   </div>
 )
 
