@@ -1,7 +1,10 @@
-from flask import Flask
+from flask import Flask, jsonify
 from yelpapi import YelpAPI
 import json
+from flask_cors import CORS, cross_origin
+
 app = Flask(__name__)
+CORS(app)
 
 yelp_api = YelpAPI("DMlBusLmWPtMSDP3NCJY9g", "wkx6RLNDmnaMYMvVTeclCtWZADlv2XnmCW19eTwVSw77MnXUl4KDp12RHGwBL1y8")
 
@@ -15,6 +18,6 @@ def show_restaurant(mylocation):
 	
 	# do something if string is null
 	try:
-		return search_results['businesses']['name']
+		return jsonify(search_results["businesses"])
 	except:
 		return "No results :("
