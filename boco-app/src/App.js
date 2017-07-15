@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import logo from './lib/images/logo.svg';
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -9,7 +9,7 @@ import {
 import RaisedButton from 'material-ui/RaisedButton';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'; 
 
-import Topics from './Topics';
+import Topics from './components/Topics';
 
 const Home = ({history}) => (
   <div>
