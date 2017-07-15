@@ -12,9 +12,11 @@ def hello():
 @app.route("/food/<mylocation>")
 def show_restaurant(mylocation):
 	search_results = yelp_api.search_query(term='food' ,location=mylocation)
+	results = search_results['businesses']
 	
-	# do something if string is null
 	try:
-		return search_results['businesses']['name']
+		test = map(lambda elem: elem['name'], results)
+		l = str(list(test))
+		return l
 	except:
 		return "No results :("
