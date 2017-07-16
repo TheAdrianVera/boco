@@ -12,8 +12,9 @@ class SearchBar extends React.Component {
                     "Tacorea",
                     "El Farolito"
                 ]}
+
                 onChange={() => console.log('Good!')}
-                onRequestSearch={() => console.log('onRequestSearch')}
+                onSearch={() => console.log('onRequestSearch')}
                 hintText="How can we make your community thrive?"
                 style={{
                     margin: '0 auto',

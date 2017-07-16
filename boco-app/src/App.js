@@ -45,8 +45,14 @@ class App extends Component {
 
     this.toggle = this.toggle.bind(this);
     this.state = {
-      isOpen: false
+      isOpen: false,
+      searchText: '',
     };
+  }
+  onChange (e) {
+    let searchText = this.state.searchText
+    searchText = e.target.value
+    this.setState(searchText)
   }
   toggle() {
     this.setState({
@@ -68,8 +74,6 @@ class App extends Component {
           </Container>
       <SearchBar/>
       <Route path="/results" component={BusinessResult}/>
-      <RaisedButton/>
-      label="Hello, World"
       onClick={() => {
         fetch("http://localhost:5000/food/san francisco")
         .then((response) => response.json())
