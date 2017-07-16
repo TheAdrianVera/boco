@@ -3,18 +3,25 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
     "classnames": "^2.2.5",
     "material-ui": "^0.18.6",
     "material-ui-search-bar": "^0.2.4",
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
+    "react-addons-css-transition-group": "^15.6.0",
+    "react-addons-transition-group": "^15.6.0",
     "react-autocomplete": "^1.5.9",
     "react-bootstrap": "^0.31.1",
     "react-dom": "^15.6.1",
+    "react-nav-bar": "^0.6.5",
     "react-router-dom": "^4.1.1",
     "react-scripts": "1.0.10",
+    "react-split-pane": "^0.1.65",
     "react-tap-event-plugin": "^2.0.1",
-    "webfontloader": "^1.6.28"
+    "reactstrap": "^4.8.0",
+    "webfontloader": "^1.6.28",
+    "yarn": "^0.27.5"
   },
   "scripts": {
     "start": "react-scripts start",
