@@ -1,13 +1,13 @@
 import React, { Component, PropTypes } from 'react';
-import './SearchPage.css';
-import BusinessPage from '../BusinessPage'
+import './BusinessResultPage.css';
+import BusinessResult from '../BusinessResult'
 import {
   BrowserRouter as Router,
   Route,
   Link
 } from 'react-router-dom';
 
-class SearchPage extends React.Component {
+class BusinessResultPage extends React.Component {
 
     constructor (props) {
         super(props);
@@ -16,7 +16,6 @@ class SearchPage extends React.Component {
             businesses: []
         };
     }
-
     componentWillMount () {
         //TODO: async call
         fetch('http://localhost:5000/food/San Francisco')
@@ -38,19 +37,17 @@ class SearchPage extends React.Component {
             return <div> Loading </div>
         } else {
             return (
-                <div>
+                 <div>
                     {this.state.businesses.map((businessData) =>
-                        (<BusinessPage businesses={businessData} />)
-                        (<BusinessPage businessRelated={businessData[0]} />))
-                        }
-                </div>
+                        (<li key={businessData.id}>BusinessResult businessData={businessData}</li>)}
+                 </div>
             )
         }
     }
 }
 
-SearchPage.propTypes = {
+BusinessResultPage.propTypes = {
 
 }
 
-export default SearchPage;
+export default BusinessResultPage;
