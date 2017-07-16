@@ -1,3 +1,4 @@
+'use strict'
 import React, { Component } from 'react';
 import './App.css';
 import {
@@ -24,10 +25,10 @@ import RaisedButton from 'material-ui/RaisedButton';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'; 
 
 import Topics from './components/Topics';
-import Business from './components/Business';
-import SearchPage from './components/SearchPage';
-import SearchBar from './components/SearchBar';
-import NavBarFixed from './components/NavBarFixed';
+import Business from './components/Business'
+import BusinessResult from './components/BusinessResult'
+import SearchPage from './components/SearchPage'
+import SearchBar from './components/SearchBar'
 import logo from "./static/images/boco.png";
 
 const logoStyle = {
@@ -52,7 +53,6 @@ class App extends Component {
       isOpen: !this.state.isOpen
     });
   }
-
   render () {
     return (
     <MuiThemeProvider> 
@@ -67,14 +67,16 @@ class App extends Component {
             <hr/>
           </Container>
       <SearchBar/>
-      {/*<RaisedButton
+      <Route path="/results" component={BusinessResult}/>
+      <RaisedButton/>
       label="Hello, World"
       onClick={() => {
         fetch("http://localhost:5000/food/san francisco")
         .then((response) => response.json())
         .then((results_list) => console.log(results_list))
       }}/>
-      <SearchPage />*/}
+      <SearchPage />
+
       </div>
     </Router>
   </MuiThemeProvider>
