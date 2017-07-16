@@ -17,10 +17,11 @@
     "react-nav-bar": "^0.6.5",
     "react-router-dom": "^4.1.1",
     "react-scripts": "1.0.10",
+    "react-split-pane": "^0.1.65",
     "react-tap-event-plugin": "^2.0.1",
     "reactstrap": "^4.8.0",
-    "yarn": "^0.27.5",
-    "webfontloader": "^1.6.28"
+    "webfontloader": "^1.6.28",
+    "yarn": "^0.27.5"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -64,6 +64,7 @@ class App extends Component {
                 <img src= {logo} style={logoStyle} alt='logo'/>
               </Col>
             </Row>
+            <hr/>
           </Container>
       <SearchBar/>
       {/*<RaisedButton
