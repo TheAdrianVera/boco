@@ -80,7 +80,7 @@ class App extends Component {
       <SearchBar/>
         <br/>
             <Row>
-              <MediaCard 
+              <MediaCard id="food"
                 businessName="Food" 
                 image="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Phat_Thai_kung_Chang_Khien_street_stall.jpg/1200px-Phat_Thai_kung_Chang_Khien_street_stall.jpg" alt="Card image cap" 
                 subTitle="Food for Thought"
@@ -128,7 +128,6 @@ class App extends Component {
         .then((results_list) => console.log(results_list))
       }}/>
       <SearchPage />*/}
-
       </div>
     </Router>
   </MuiThemeProvider>

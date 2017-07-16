@@ -3,6 +3,11 @@ import PropTypes from 'prop-types'
 import { Card, CardImg, CardText, CardBlock,
   CardTitle, CardSubtitle, Button } from 'reactstrap';
 import './MediaCard.css'
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom';
 
 class MediaCard extends Component {
     render () {
@@ -14,7 +19,7 @@ class MediaCard extends Component {
                 <CardTitle>{this.props.businessName}</CardTitle>
                 <CardSubtitle>{this.props.subTitle}</CardSubtitle>
                 <CardText>{this.props.businessText}</CardText>
-                <Button>{this.props.buttonText}</Button>
+                <Button><Link to={`/${this.props.businessName.toLowerCase()}/san francisco`}>{this.props.buttonText}</Link></Button>
                 </CardBlock>
             </Card>
             </div>
