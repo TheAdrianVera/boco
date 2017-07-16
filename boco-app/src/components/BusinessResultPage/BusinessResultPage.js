@@ -19,6 +19,7 @@ class BusinessResultPage extends React.Component {
     componentWillMount () {
         //TODO: async call
         fetch('http://localhost:5000/food/San Francisco')
+        fetch('http://localhost:5000/food/'+ this.props.request)
         .then((response) => (response.json()))
         .then((businessList) => {
             this.setState({
