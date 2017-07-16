@@ -9,14 +9,15 @@ class SearchBar extends React.Component {
             <div>
                 <SearchBarField
                 dataSource= {[
-                    
+                    "Tacorea",
+                    "El Farolito"
                 ]}
                 onChange={() => console.log('Good!')}
                 onRequestSearch={() => console.log('onRequestSearch')}
-                hintText="What can we help you with?"
+                hintText="How can we make your community thrive?"
                 style={{
                     margin: '0 auto',
-                    maxWidth: 800
+                    maxWidth: 1200
                 }}
                 />
             </div>
