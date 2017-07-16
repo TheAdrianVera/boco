@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import './SearchPage.css';
-import Business from '../Business'
+import BusinessPage from '../BusinessPage'
 import {
   BrowserRouter as Router,
   Route,
@@ -40,7 +40,9 @@ class SearchPage extends React.Component {
             return (
                 <div>
                     {this.state.businesses.map((businessData) =>
-                        (<Business businessData={businessData} />))}
+                        (<BusinessPage businesses={businessData} />)
+                        (<BusinessPage businessRelated={businessData[0]} />))
+                        }
                 </div>
             )
         }
