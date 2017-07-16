@@ -12,9 +12,9 @@ yarn start //http://localhost:3000
 ```
 ### Views
 
-![Frontpage](./src/static/images/screen1.png)
-![Frontpage](./src/static/images/screen2.png)
-![Frontpage](./src/static/images/web-gif.gif)
+![Frontpage](./boco-app/src/static/images/screen1.png)
+![Frontpage](./boco-app/src/static/images/screen2.png)
+![Frontpage](./boco-app/src/static/images/web-gif.gif)
 
 ### Contributors
 - Rosario Huamani Carpio
