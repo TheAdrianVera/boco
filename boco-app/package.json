@@ -14,11 +14,8 @@
     "react-router-dom": "^4.1.1",
     "react-scripts": "1.0.10",
     "react-tap-event-plugin": "^2.0.1",
-<<<<<<< HEAD
-    "yarn": "^0.27.5"
-=======
+    "yarn": "^0.27.5",
     "webfontloader": "^1.6.28"
->>>>>>> a2ed07f10b3af0fe234199e1583e1527a17f4a18
   },
   "scripts": {
     "start": "react-scripts start",
