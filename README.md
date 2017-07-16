@@ -12,9 +12,9 @@ yarn start //http://localhost:3000
 ```
 ### Views
 
-![Frontpage](static/images/screen1.png)
-![Frontpage](static/images/screen2.png)
-![Frontpage](static/images/web-gif.gif)
+![Frontpage](./src/static/images/screen1.png)
+![Frontpage](./src/static/images/screen2.png)
+![Frontpage](./src/static/images/web-gif.gif)
 
 ### Contributors
 - Rosario Huamani Carpio
