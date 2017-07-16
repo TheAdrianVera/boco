@@ -1,5 +1,19 @@
 # BOCO
 
-## Helping Businesses of Color Thrive
+## A "Yelp-like" App that Helps Businesses of Color Thrive
 
-### Add info here
+### Installation
+```
+git clone https://github.com/TheAdrianVera/boco.git
+npm install
+yarn start
+
+```
+
+### Contributors
+- Rosario Huamani Carpio
+- Isiah Manns
+- Juan Zamudio
+- Edwin Villafane
+- Errol Francis II
+- Adrian Vera
