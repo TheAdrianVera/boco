@@ -144,4 +144,4 @@ this.propTypes = {
 };
 
 
-export default CardExampleWithAvatar;
+// export default CardExampleWithAvatar;
