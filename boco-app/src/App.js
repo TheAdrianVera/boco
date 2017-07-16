@@ -1,3 +1,4 @@
+'use strict'
 import React, { Component } from 'react';
 import './App.css';
 import {
@@ -24,7 +25,6 @@ import RaisedButton from 'material-ui/RaisedButton';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'; 
 
 import Topics from './components/Topics';
-<<<<<<< HEAD
 import Business from './components/Business'
 import BusinessResult from './components/BusinessResult'
 import SearchPage from './components/SearchPage'
@@ -68,8 +68,7 @@ class App extends Component {
           </Container>
       <SearchBar/>
       <Route path="/results" component={BusinessResult}/>
-      <RaisedButton
-      {/*<RaisedButton
+      <RaisedButton/>
       label="Hello, World"
       onClick={() => {
         fetch("http://localhost:5000/food/san francisco")
