@@ -12,6 +12,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import Topics from './components/Topics';
 import Business from './components/Business'
 import SearchPage from './components/SearchPage'
+import BusinessPage from './components/BusinessPage'
 
 const Home = ({history}) => (
   <div>
@@ -41,6 +42,7 @@ const BasicExample = () => (
           <li><Link to="/">Home</Link></li>
           <li><Link to="/about">About</Link></li>
           <li><Link to="/topics">Topics</Link></li>
+          <li><Link to="/businesspage">BusinessPage</Link></li>
         </ul>
 
         <hr/>
@@ -48,6 +50,7 @@ const BasicExample = () => (
         <Route exact path="/" component={Home}/>
         <Route path="/about" component={About}/>
         <Route path="/topics" component={Topics}/>
+        <Route path="/businesspage" component={BusinessPage}/>
       </div>
     </Router>
   </MuiThemeProvider>
