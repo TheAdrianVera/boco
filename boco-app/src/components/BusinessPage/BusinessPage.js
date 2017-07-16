@@ -32,7 +32,6 @@ const styles = {
 
 const tilesData = [
   {
-    img: this.props.businesses[1].image_url,
     title: 'Breakfast',
     author: 'jill111',
   },
@@ -111,7 +110,7 @@ const CardExampleWithAvatar = () => (
     </GridList>
   </div>
   </div>
-  </SplitPane>
+  </SplitPane> 
     
   </Card>
   

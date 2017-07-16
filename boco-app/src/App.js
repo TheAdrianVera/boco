@@ -10,6 +10,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 import Topics from './components/Topics';
 import Business from './components/Business'
+import BusinessResult from './components/BusinessResult'
 import SearchPage from './components/SearchPage'
 import SearchBar from './components/SearchBar'
 
@@ -20,6 +21,7 @@ class BasicExample extends Component {
     <Router>
       <div>
       <SearchBar/>
+      <Route path="/results" component={BusinessResult}/>
       <RaisedButton
       label="Hello, World"
       onClick={() => {
@@ -28,6 +30,7 @@ class BasicExample extends Component {
         .then((results_list) => console.log(results_list))
       }}/>
       <SearchPage />
+
       </div>
     </Router>
   </MuiThemeProvider>

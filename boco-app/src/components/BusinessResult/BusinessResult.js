@@ -11,7 +11,7 @@ import {
 } from 'react-router-dom';
 
 const styles = {
-  gridList: {
+    gridList: {
     width: 700,
     height: 200,
     overflowY: 'auto',
@@ -20,7 +20,6 @@ const styles = {
 };
 const divStyle = {
   textAlign: 'center',
-  border: 1,
 };
 class BusinessResult extends React.Component {
   render () {
@@ -33,26 +32,27 @@ class BusinessResult extends React.Component {
       cellHeight={180}
       style={styles.gridList}
       >
-        <GridTile
-        //   title={this.props.businessData.name}
-        //   subtitle={<span>{this.props.businessData.price}
-        //   <b>{this.props.businessData.rating}</b></span>}
-        >
+        <GridTile>
         <img src={this.props.businessData.image_url} />
         </GridTile>
 
         <div id="cardInfo" style= {divStyle}>
         <div id="placeName" style={divStyle}>
           <b>{this.props.businessData.name}</b>
+          <div id="category">{this.props.businessData.categories[0].title} </div>
+          
+
         </div>
         <div id="placeInfo">
           Rating: {this.props.businessData.rating}
           <br/>
           Avg price: {this.props.businessData.price}
+          <br/>
 
         </div>
         </div>
         </GridList>
+        <hr/>
 
         </div>
 

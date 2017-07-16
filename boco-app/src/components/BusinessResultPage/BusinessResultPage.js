@@ -48,6 +48,7 @@ class BusinessResultPage extends React.Component {
 
 BusinessResultPage.propTypes = {
 
+    request: PropTypes.object,
 }
 
 export default BusinessResultPage;
