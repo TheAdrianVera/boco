@@ -17,7 +17,7 @@ class SearchBar extends React.Component {
                 hintText="How can we make your community thrive?"
                 style={{
                     margin: '0 auto',
-                    maxWidth: 1200
+                    maxWidth: 1500
                 }}
                 />
             </div>
