@@ -8,6 +8,7 @@
     "material-ui-search-bar": "^0.2.4",
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
+    "react-autocomplete": "^1.5.9",
     "react-bootstrap": "^0.31.1",
     "react-dom": "^15.6.1",
     "react-router-dom": "^4.1.1",
