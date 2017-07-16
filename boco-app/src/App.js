@@ -31,6 +31,7 @@ import Topics from './components/Topics';
 import Business from './components/Business';
 import SearchPage from './components/SearchPage';
 import SearchBar from './components/SearchBar';
+import BusinessPage from './components/BusinessPage';
 import NavBarFixed from './components/NavBarFixed';
 import MediaCard from './components/MediaCard';
 import logo from "./static/images/boco.png";
@@ -67,6 +68,7 @@ class App extends Component {
     return (
     <MuiThemeProvider> 
     <Router>
+
       <Route path="/businesspage" component={BusinessPage} />
       <div>
           <Container>
