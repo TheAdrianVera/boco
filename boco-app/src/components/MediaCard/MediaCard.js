@@ -14,7 +14,7 @@ class MediaCard extends Component {
         return (
             <div className="col-md-4">
             <Card>
-                <CardImg top width="100%" src={this.props.image} alt="Card image cap" />
+                <CardImg className="image-card" top width="100%" src={this.props.image} alt="Card image cap" />
                 <CardBlock>
                 <CardTitle>{this.props.businessName}</CardTitle>
                 <CardSubtitle>{this.props.subTitle}</CardSubtitle>

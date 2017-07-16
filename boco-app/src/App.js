@@ -36,10 +36,12 @@ import MediaCard from './components/MediaCard';
 import logo from "./static/images/boco.png";
 
 const logoStyle = {
-    width: '300px',
+    width: '500px',
     height: 'auto',
+    padding: '60px',
     display:'block',
-    margin: 'auto'
+    margin: 'auto',
+    cursor: 'pointer'
 };
 
 class App extends Component {
@@ -67,17 +69,18 @@ class App extends Component {
     return (
     <MuiThemeProvider> 
     <Router>
-      <div>
+      <div className="App-header">
           <Container>
             <Row>
               <Col>
                 <img src= {logo} style={logoStyle} alt='logo'/>
               </Col>
             </Row>
+            <SearchBar/>
           </Container>
-          <hr/>
           <br/>
-      <SearchBar/>
+          <br/>
+          <br/>
         <br/>
             <Row>
               <MediaCard id="food"
