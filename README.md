@@ -12,8 +12,13 @@ yarn start //http://localhost:3000
 ```
 ### Views
 
-![Frontpage](./boco-app/src/static/images/screen1.png)
+#### Top of Page
 ![Frontpage](./boco-app/src/static/images/screen2.png)
+
+#### Items on Hover
+![Frontpage](./boco-app/src/static/images/screen1.png)
+
+#### Functionality
 ![Frontpage](./boco-app/src/static/images/web-gif.gif)
 
 ### Contributors
