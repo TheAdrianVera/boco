@@ -8,7 +8,7 @@ git clone https://github.com/TheAdrianVera/boco.git
 
 npm install
 
-yarn start //http://localhost:3000
+yarn start http://localhost:3000
 ```
 ### Views
 
